@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Running unit tests... Pass!'
+                bat 'Running unit tests... Pass!'
             }
         }
         stage('Package') {
