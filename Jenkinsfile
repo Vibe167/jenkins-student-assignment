@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Compiling application...'
+                 bat 'echo Compiling application...'
             }
         }
         stage('Test') {
             steps {
-                echo 'Running unit tests... Pass!'
+                 bat 'echo Running unit tests... Pass!'
             }
         }
         stage('Package') {
